@@ -1,29 +1,20 @@
-import React from 'react';
-import './Cards.css';
+import React from "react";
+import "./Cards.css";
+
+
 
 const ClubCard = ({ clubData, onClick, index = 0 }) => {
-  const {
-    id,
-    name,
-    description,
-    icon,
-    image,
-    projectCount
-  } = clubData;
+  const { id, name, description, icon, logo, projectCount } = clubData;
 
   return (
-    <div 
-      className="club-card" 
-      data-aos="fade-up" 
+    <div
+      className="club-card"
+      data-aos="fade-up"
       data-aos-delay={index * 100}
       onClick={() => onClick && onClick(id)}
     >
       <div className="club-icon">
-        {image ? (
-          <img src={image} alt={name} />
-        ) : (
-          icon
-        )}
+        {logo ? <img src={logo} alt={`${name} logo`} /> : <span>{icon}</span>}
       </div>
       <h3 className="club-name">{name}</h3>
       <p className="club-description">{description}</p>
@@ -32,4 +23,4 @@ const ClubCard = ({ clubData, onClick, index = 0 }) => {
   );
 };
 
-export default ClubCard; 
+export default ClubCard;
