@@ -1,23 +1,25 @@
-/* 
+
 header {
-    width: 100%;  
+    width: 100%; 
+    
   background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 100;
+  /* min-height: 8vh; */
 }
 
 nav.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem ;
    max-width: 1200px; 
   margin: 0 auto;
   flex-wrap: nowrap;
-  min-height: 56px;
+  /* min-height: 8vh; */
 }
 
 .web-logo {
@@ -42,6 +44,7 @@ nav.container {
 
 .nav-links {
   display: flex;
+  
   gap: 1rem;
   list-style: none;
   margin: 0;
@@ -53,7 +56,7 @@ nav.container {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   transition: color 0.2s;
   padding: 0.3rem 0.5rem;
   border-radius: 6px;
@@ -173,7 +176,7 @@ nav.container {
     gap: 0.2rem;
     margin-left: 0.2rem;
   }
-} */
+}
 
 
 
@@ -202,7 +205,7 @@ header {
 }
 
 header .container {
-  max-width: 1200px;
+  max-width: 2250px;
   margin: 0 auto;
   padding: 0 0rem;
   display: flex;
@@ -458,22 +461,30 @@ header .hamburger span {
   }
 
 @media (min-width: 1025px) {
-  header .container {
-    padding: 0 2rem;
+  header .logo {
+    font-size: 5rem; /* Increase logo size for large screens */
   }
-   header .logo {
-    font-size: 2rem;
-    opacity:0.8;
+
+  header .web-logo {
+    width: 75px; /* Increase logo image size */
+    height: 75px;
   }
-  header .logo:hover{
-    opacity:1;
+
+  header .btn {
+    padding: 1rem 2.5rem; /* Larger button for large screens */
+    font-size: 2rem; /* Larger text */
   }
-  
-  header .nav-links {
-    gap: 2.5rem;
+
+  header .btn-outline {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  header .btn-primary {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
   }
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -595,3 +606,9 @@ body.menu-open {
   }
 }
   
+
+
+
+
+
+

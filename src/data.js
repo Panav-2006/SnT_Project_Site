@@ -3,7 +3,7 @@ export const clubsData = [
     id: "aero",
     name: "Aeromodeling Club",
     description:
-      "Aeromodelling Club, IIT Kanpur has been innovating cutting-edge aircraft designs since 2003...",
+      "The Aeromodelling Club at IIT Kanpur, established in 2003, has been at the forefront of this innovation, creating new conceptual aircraft and setting global benchmarks, especially in SAE Aero. The club's summer projects provide students the opportunity to turn their ideas into working models. In 2018,students developed a composite aircraft for DRDO under expert guidance, further pushing the boundaries of aeromodelling.",
     logo: "/aeroIcon.png",
     projectCount: 9,
   },
